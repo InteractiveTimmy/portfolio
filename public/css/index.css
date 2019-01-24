@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font: 16px 'Work Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h5 {
+  font-weight: normal;
+}
+
+section {
+  min-height: 100vh;
+  height: 100vh;
+}
+
+.cta {
+  background: url( ../img/cta-b.jpg ) no-repeat center center; 
+  background-size: cover;
+}
+
+header {
+  color: #333;
+  fill: #333;
+  height: 4em;
+  padding: 1em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  height: 4em;
+}
+
+nav {
+  display: flex;
+}
+
+nav div {
+  width: 4em;
+}
