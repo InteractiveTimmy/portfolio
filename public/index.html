@@ -16,20 +16,44 @@
     <link rel="stylesheet" href="css/index.css" type="text/css">
   </head>
   <body>
-    <section class='cta'>
+
+    <!-- Profile Section -->
+    <section id="profile">
+
       <header>
-        <img src='img/logo.svg' alt='logo'>
+        <img src="img/logo.svg" alt="logo">
         <nav>
-          <div>item</div>
-          <div>item</div>
-          <div>item</div>
-          <div>item</div>
-          <div>item</div>
+          <div>Profile</div>
+          <div>Blog</div>
+          <div>Projects</div>
         </nav>
       </header>
+
+      <div id='profile-container'>
+        <img id="profile-avatar" src='img/avatar.jpg' alt='avatar'>
+        <div id="profile-links">
+          <img src='img/linkedin.svg' alt='linkedin' onclick="openURL( 'https://www.linkedin.com/in/timothy-scheuering' );" />
+          <img src='img/github.svg' alt='github' onclick="openURL( 'https://github.com/InteractiveTimmy' );" />
+        </div>
+      </div>
+
     </section>
-    <section>
-        Content
-      </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+      Blog
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      Projects
+    </section>
+
+    <script>
+      function openURL( url ) {
+        let myWindow = window.open( url, '_blank' );
+        myWindow.focus( );
+      }
+    </script>
   </body>
 </html>
