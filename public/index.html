@@ -41,7 +41,29 @@
 
     <!-- Blog Section -->
     <section id="blog">
-      Blog
+      <div class="card">
+        <img class="card-img" src="img/cta-profile.jpg" />
+        <div class="card-text">
+          <h3>First Blog</h3>
+          <hr />
+          <p class="card-body">This is a very short blog body. This will be under 140 characters for testing purposes. Please hold the phone.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img" src="img/cta-blog.jpg" />
+        <div class="card-text">
+          <h3>Second Blog</h3>
+          <hr />
+          <p class="card-body">Blog body example. There is a lot of text here, I will continue to type until i've reached the max length of a tweet on twitter. Lots of data can be place here. It seems as though the hard limit of Twitter is now 280 instead of 140, which is news to me. Almost done. Hello World K</p>
+        </div>
+      </div>
+      <div class="card">
+          <div class="card-text">
+            <h3>Third Blog</h3>
+            <hr />
+            <p class="card-body">This is a very long blog without a picture. Inserting Lorem Ipsum: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius tempus dui. Curabitur interdum nisl vitae lacus mattis finibus. Vivamus mi lorem, faucibus sit amet malesuada sed, finibus eu orci. In hac habitasse platea dictumst. Proin cursus, metus id pulvinar ullamcorper, ipsum ipsum ullamcorper nunc, eu vehicula enim nibh nec mi. Vestibulum at neque ac tortor elementum vehicula. Aenean nisl tortor, malesuada at urna ut, iaculis dignissim lorem. In bibendum, est eget convallis ornare, ex neque ornare orci, non dapibus quam ex in nisi. Vivamus accumsan nec enim eget sodales.</p>
+          </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
@@ -54,6 +76,29 @@
         let myWindow = window.open( url, '_blank' );
         myWindow.focus( );
       }
+
+      function generateEllipsis ( elements )
+      {
+        let words;
+
+        for ( let i = 0; i < elements.length; i++ )
+        {
+          words = elements[i].innerHTML.split( ' ' );
+
+          while ( elements[i].scrollHeight > elements[i].clientHeight )
+          {
+            console.log( 'looping' );
+            words.pop( );
+            elements[i].innerHTML = words.join( ' ' ) + '...';
+          }
+        }
+      }
+
+      document.onreadystatechange = ( ) => {
+        if ( document.readyState === 'complete' ) {
+          generateEllipsis( document.getElementsByClassName( 'blog-body' ) );
+        }
+      };
     </script>
   </body>
 </html>

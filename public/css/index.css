@@ -13,16 +13,19 @@ h1, h2, h3, h4, h5, h5 {
   font-weight: normal;
 }
 
-section {
-  min-height: 100vh;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+p {
+  font-size: 14px;
 }
+
+/* Profile Section */
 
 #profile {
   background: url( ../img/cta-projects.jpg ) no-repeat center center; 
   background-size: cover;
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 #profile-container {
@@ -60,14 +63,19 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 header img {
   height: 4em;
+  flex-grow: 1;
 }
 
 nav {
+  margin-top: 0.5em;
+  flex-grow: 1;
   display: flex;
+  justify-content: center;
 }
 
 nav div {
@@ -82,4 +90,67 @@ nav div {
 
 nav div:hover {
   border-bottom: 2px solid #005577;
+}
+
+/* Blog Section */
+
+#blog {
+  padding: 2em 1em;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  transition: transform .5s cubic-bezier( 0.2, 1, 0.2, 1 );
+  width: 16em;
+  height: 24em;
+  max-height: 24em;
+  border-radius: 0.2em;
+  margin: 1em;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  animation: card-fade-in 1s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY( -0.5em );
+}
+
+.card-text {
+  margin: 0.5em;
+  flex-shrink: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-body {
+  margin: 0.5em;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.card-text hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 0.25em 0 0.5em 0;
+}
+
+.card-img {
+  width: 16em;
+  border-radius: 0.2em 0.2em 0 0;
+}
+
+@keyframes card-fade-in {
+  0% { opacity: 0; }
+  25% { opacity: 0; }
+  100% { opacity: 1; }
 }
