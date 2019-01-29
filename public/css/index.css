@@ -99,9 +99,12 @@ p {
   background: url( ../img/cta.jpg ) no-repeat center center; 
   background-size: cover;
   min-height: 100vh;
-  height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.profile-spacer {
+  height: 8em;
 }
 
 #profile-container {
@@ -109,23 +112,24 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 #profile-avatar {
   flex-basis: 0;
   width: 16em;
   height: 16em;
+  max-height: 16em;
   clip-path: circle( 8em at center );
-  margin: 6em 0 2em 0;
+  margin: 2em 0;
 }
 
 #profile-blob {
   color: #333;
-  margin: 2em;
   max-width: 30em;
   text-align: center;
   line-height: 1.4em;
+  margin: 0 1em;
 }
 
 #profile-links {
