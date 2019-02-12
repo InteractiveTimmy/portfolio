@@ -41,6 +41,13 @@
       "body": "Status - In Development<br /><br />An entity component system made entirely in JavaScript. Being designed with system pipelines in mind, it will be fully modular upon release.",
       "image": "img/cta-project-2.png",
       "link": "https://github.com/InteractiveTimmy/js-ecs"
+    },
+    {
+      "visible": true,
+      "title": "Particle",
+      "body": "Status - In Development<br /><br />A fun project designed to test my current JavaScript ECS repository performance. This project utilizes the canvas HTML5 element and the '2d' canvas context.",
+      "image": "img/cta-project-3.png",
+      "link": "https://github.com/InteractiveTimmy/js-particle-playground"
     }
   ]
 }

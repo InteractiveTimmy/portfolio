@@ -25,6 +25,10 @@ p {
   font-size: 14px;
 }
 
+canvas {
+  position: absolute;
+}
+
 /* General Selectors */
 
 .collection {
@@ -99,6 +103,7 @@ p {
   background: url( ../img/cta.jpg ) no-repeat center center; 
   background-size: cover;
   min-height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -126,10 +131,21 @@ p {
 
 #profile-blob {
   color: #333;
+  z-index: 100;
+  font-weight: bold;
   max-width: 30em;
   text-align: center;
   line-height: 1.4em;
   margin: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#profile-blob h3 {
+  font-weight: bold;
+  margin-bottom: 0.5em;
 }
 
 #profile-links {

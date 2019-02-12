@@ -17,10 +17,12 @@
     <title>Timothy Scheuering</title>
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <script src="js/index.js"></script>
+    <script src="js/canvas.js"></script>
   </head>
   <body>
     <!-- Profile Section -->
     <section id="profile">
+      <canvas></canvas>
       <header id="header-static">
         <div class="logo">
           <div class="logo-first">Timothy</div>
@@ -36,7 +38,10 @@
       <div id='profile-container'>
         <div class="profile-spacer"></div>
         <img id="profile-avatar" src='img/avatar.jpg' alt='avatar' />
-        <h3 id="profile-blob">I'm an full-stack software developer, currently employed by Cisco Systems.</h3>
+        <div id="profile-blob">
+          <h3>Full-Stack Software Developer</h3>
+          <h4>Currently Employed by Cisco Systems</h4>
+        </div>
         <div id="profile-links">
           <img src='img/linkedin.svg' alt='linkedin' onclick="openURL( 'https://www.linkedin.com/in/timothy-scheuering', '_blank' );" />
           <img src='img/github.svg' alt='github' onclick="openURL( 'https://github.com/InteractiveTimmy', '_blank' );" />
