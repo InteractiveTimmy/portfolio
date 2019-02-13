@@ -44,8 +44,8 @@
     },
     {
       "visible": true,
-      "title": "Particle",
-      "body": "Status - In Development<br /><br />A fun project designed to test my current JavaScript ECS repository performance. This project utilizes the canvas HTML5 element and the '2d' canvas context.",
+      "title": "Particle Playground",
+      "body": "Status - In Development<br /><br />A fun project designed to test my current JavaScript ECS repository performance. This project utilizes the HTML5 canvas element and the '2d' canvas context.",
       "image": "img/cta-project-3.png",
       "link": "https://github.com/InteractiveTimmy/js-particle-playground"
     }
