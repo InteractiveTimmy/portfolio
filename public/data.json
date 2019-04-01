@@ -48,6 +48,13 @@
       "body": "Status - In Development<br /><br />A fun project designed to test my current JavaScript ECS repository performance. This project utilizes the HTML5 canvas element and the '2d' canvas context.",
       "image": "img/cta-project-3.png",
       "link": "https://github.com/InteractiveTimmy/js-particle-playground"
+    },
+    {
+      "visible": true,
+      "title": "API Boiler Plate",
+      "body": "Status - In Development<br /><br />Designed to streamline the development of small applications that require CRUD operations as well as flexible data interfaces.",
+      "image": "img/cta-project-4.png",
+      "link": "https://github.com/InteractiveTimmy/js-abp"
     }
   ]
 }
