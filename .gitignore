@@ -1,3 +1,12 @@
+# config data
+/config/environment/custom.js
+
+# build data
+dist
+/packages/**/build
+/public
+/public-old
+
 # Logs
 logs
 *.log
