@@ -17,6 +17,6 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
-    project: './config/typescript/node.json',
+    project: './config/building/ts-node.json',
   },
 };
