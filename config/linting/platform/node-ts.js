@@ -19,4 +19,11 @@ module.exports = {
     sourceType: 'module',
     project: './config/building/ts-node.json',
   },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.ts'],
+      },
+    },
+  },
 };
