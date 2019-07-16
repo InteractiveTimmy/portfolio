@@ -8,7 +8,6 @@ process.app = {
 };
 
 const {
-  config,
   log,
   args,
 } = process.app;

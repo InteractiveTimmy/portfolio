@@ -9,6 +9,8 @@
     "test": "node ./scripts/index.js test",
     "server:clean": "rimraf ./packages/server/dist ./packages/server/build",
     "server:compile": "rollup --config ./packages/server/rollup.config.js",
+    "server:lint": "eslint ./packages/server/src/** ./packages/server/test/**",
+    "server:test": "echo no test specified",
     "server:transpile": "tsc -p ./packages/server"
   },
   "repository": {
@@ -27,9 +29,14 @@
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jest": "^22.8.0",
     "jest": "^24.8.0",
     "rimraf": "^2.6.3",
     "rollup": "^1.16.7",
     "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.0",
+    "express": "^4.17.1"
   }
 }
