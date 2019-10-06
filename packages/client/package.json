@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "@portfolio/client",
   "version": "2.0.0",
-  "description": "My Portofolio Website",
+  "description": "Client application for my portfolio",
   "scripts": {
     "test": "echo no test found"
   },
@@ -14,5 +14,5 @@
   "bugs": {
     "url": "https://github.com/InteractiveTimmy/portfolio/issues"
   },
-  "homepage": "https://github.com/InteractiveTimmy/portfolio#readme"
+  "homepage": "https://github.com/InteractiveTimmy/portfolio/tree/master/packages/client#readme"
 }
