@@ -1,5 +1,6 @@
 # config data
-/config/environment/custom.js
+
+config.json
 
 # build data
 dist

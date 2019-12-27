@@ -1,0 +1,48 @@
+@import '../../views/default/globals.scss';
+
+#profile {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+
+  >.image {
+    max-width: 60%;
+    max-height: 60%;
+
+    >img {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  >.text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    >div {
+      margin: 0.2rem;
+    }
+
+    >.blurb {
+      font-size: 1.0rem;
+    }
+
+    >.title {
+      color: $foreground;
+      font-size: 1.2rem;
+    }
+  }
+
+  >.links {
+    align-items: center;
+    display: flex;
+    height: 6rem;
+    justify-content: center;
+  }
+}

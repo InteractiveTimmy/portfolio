@@ -1,0 +1,29 @@
+@import '../../views/default/globals.scss';
+
+section {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 100%;
+
+  &[data-off-color="true"] {
+    background-color: $background
+  }
+
+  .cards {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 60%;
+    max-width: 80%;
+    justify-content: center;
+  }
+
+  &>.title {
+    color: $midground;
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+}

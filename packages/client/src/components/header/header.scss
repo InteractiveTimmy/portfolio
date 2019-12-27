@@ -1,0 +1,18 @@
+@import '../../views/default/globals.scss';
+
+header {
+  align-items: center;
+  background-color: $background;
+  display: flex;
+  height: 4rem;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+  transition: background-color 0.2s;
+  width: 100%;
+  z-index: 1000;
+
+  &[data-transparent=false] {
+    background-color: $transparent;
+  }
+}

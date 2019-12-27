@@ -1,0 +1,19 @@
+@import '../../views/default/globals.scss';
+
+.navigation-item {
+  @include no-select;
+
+  transition: border-bottom-color 0.2s;
+  align-items: center;
+  border-bottom: 0.4rem solid $transparent;
+  cursor: pointer;
+  display: flex;
+  flex-grow: 1;
+  height: calc(100% - 0.4rem);
+  justify-content: center;
+  width: 6rem;
+
+  &:hover {
+    border-bottom: 0.4rem solid $primary;
+  }
+}

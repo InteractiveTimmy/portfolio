@@ -1,0 +1,21 @@
+@import '../../views/default/globals.scss';
+
+.social-icon {
+  @include no-select;
+
+  height: 100%;
+  transform: scale( 0.8 );
+  transition: transform .2s cubic-bezier( 0.2, 1, 0.2, 1 );
+  width: 100%;
+  cursor: pointer;
+
+  &[data-hover=true] {
+    &:hover {
+      transform: scale( 1 );
+    }
+  }
+
+  >img {
+    height: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../views/default/globals.scss';
+
+#logo {
+  display: flex;
+  justify-content: center;
+
+  >div {
+    align-items: center;
+    color: $background;
+    display: flex;
+  }
+
+  :first-child {
+    background-color: $foreground;
+    border-radius: 0.4rem 0 0 0.4rem;
+    padding: 0.4rem 0.4rem 0.4rem 0.8rem;
+  }
+
+  :last-child {
+    background-color: $primary;
+    border-radius: 0 0.4rem 0.4rem 0;
+    padding: 0.4rem 0.8rem 0.4rem 0.4rem;
+  }
+}

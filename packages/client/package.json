@@ -2,8 +2,18 @@
   "name": "@portfolio/client",
   "version": "2.0.0",
   "description": "Client application for my portfolio",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
   "scripts": {
-    "test": "echo no test found"
+    "clean": "rimraf ./build",
+    "compile": "webpack --config ./webpack.config.js --mode production",
+    "lint": "eslint ./src/** ./test/**",
+    "start": "webpack-dev-server --config ./webpack.config.js --open --hot",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -14,5 +24,13 @@
   "bugs": {
     "url": "https://github.com/InteractiveTimmy/portfolio/issues"
   },
-  "homepage": "https://github.com/InteractiveTimmy/portfolio/tree/master/packages/client#readme"
+  "homepage": "https://github.com/InteractiveTimmy/portfolio/tree/master/packages/client#readme",
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
+  }
 }
