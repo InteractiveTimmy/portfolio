@@ -1,0 +1,13 @@
+import { CONSTANTS as COMMON_CONSTANTS } from '../../common';
+
+const ELEMENT_NAME = 'app';
+const { ELEMENT_PREFIX } = COMMON_CONSTANTS;
+const ELEMENT_NS = `${ELEMENT_PREFIX}-${ELEMENT_NAME}`;
+
+const CONSTANTS = {
+  ELEMENT_NAME,
+  ELEMENT_NS,
+  ELEMENT_PREFIX,
+};
+
+export default CONSTANTS;
